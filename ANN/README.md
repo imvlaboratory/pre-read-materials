@@ -22,10 +22,9 @@ BANNER STUDY GROUP
     tf.keras.layers.InputLayer(input_shape=(height, width, color_channels))
   ```
   ```
-    tf.keras.layers.Dense\Conv2D\Flatten(units, input_shape=(height, width, color_channels))
+    tf.keras.layers.Dense\Conv2D\Flatten(input_shape=(height, width, color_channels))
   ```
   - input_shape/shape → dimensi ruang input
-  - units → dimensi ruang output
 
 ### Hidden Layer
   ```
