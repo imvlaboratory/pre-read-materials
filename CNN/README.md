@@ -1,4 +1,6 @@
-# Convolutional Neural Network (CNN)
+BANNER STUDY GROUP
+----
+<h1 align="center"> Convolutional Neural Network (CNN) </h1>
 
 <p align="center">
     <img src="contents/overview cnn.ppm" alt="overview cnn" width="480" style="vertical-align:middle">
@@ -22,7 +24,7 @@ tf.keras.layers.Conv2D(
     strides=(1, 1),
     padding='valid',
     activation=None,
-    input_shape=(height, width, channel)
+    input_shape=(height, width, color_channels)
 )
 ```
 
