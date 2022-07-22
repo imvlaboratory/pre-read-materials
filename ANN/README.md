@@ -50,6 +50,13 @@ BANNER STUDY GROUP
     tf.keras.layers.Dense(units, activation=None)
   ```
   - units → dimensi ruang output
+  - activation → fungsi aktivasi untuk digunakan
+  
+    | activation  | output/class mode | loss function | 
+    |     ---     |        ---        |     ---       |
+    |   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
+    |   softmax   |   categorical     |     categorical_crossentropy → [1 0 0] |
+    |   softmax   |   categorical     |  sparse_categorical_crossentropy → [1] |
 
 ----
 Google Colabs: https://colab.research.google.com/drive/1ZwvOVEfuFmZ7tkQq4r-1kla9xpofMF5_#scrollTo=NYt5x9HdA_Fi
