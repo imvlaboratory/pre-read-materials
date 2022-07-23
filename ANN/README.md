@@ -55,8 +55,8 @@ BANNER STUDY GROUP
     | activation  | output/class mode | loss function | 
     |     ---     |        ---        |     ---       |
     |   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
-    |   softmax   |   categorical     |     categorical_crossentropy → [1 0 0] |
-    |   softmax   |   categorical     |  sparse_categorical_crossentropy → [1] |
+    |   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
+    |   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
 
 ----
 Google Colabs: 
