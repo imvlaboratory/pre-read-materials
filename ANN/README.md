@@ -59,4 +59,6 @@ BANNER STUDY GROUP
     |   softmax   |   categorical     |  sparse_categorical_crossentropy → [1] |
 
 ----
-Google Colabs: https://colab.research.google.com/drive/1ZwvOVEfuFmZ7tkQq4r-1kla9xpofMF5_#scrollTo=NYt5x9HdA_Fi
+Google Colabs: 
+- [Fashion-MNIST](https://colab.research.google.com/drive/1ZwvOVEfuFmZ7tkQq4r-1kla9xpofMF5_?usp=sharing)
+- [Handwritten Digits-MNIST](https://colab.research.google.com/drive/1U1xKoEehgWVvq5cEuf1A4LcurWSt1WFA?usp=sharing)
