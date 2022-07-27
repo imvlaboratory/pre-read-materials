@@ -6,8 +6,7 @@ BANNER STUDY GROUP
     <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" style="vertical-align:middle">
 </p>
 
-### Timeline:
-1.
-1.
-1.
-1.
+# Definisi Artificial Intelligence
+## Perbedaan Machine Learning dan Deep Learning
+
+# Pengenalan Library untuk Membangun Artificial Intelligence
