@@ -123,3 +123,4 @@ Flatten dan Global Average Pooling → input layer
 ---
 - [cat vs dog](https://colab.research.google.com/drive/1N3W4rkGrEUKcbdDKAeKGEIOGRgVPiOXF?usp=sharing)
 - [human vs horse](https://colab.research.google.com/drive/1SxLHH0gJlhjg08Dc7apYDzo49qseKxT0?usp=sharing)
+- [rps](https://colab.research.google.com/drive/1sh8FrF8U16PJGaw-rmc7mgQ9NJzmBEKw?usp=sharing)
