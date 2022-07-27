@@ -2,20 +2,23 @@ BANNER STUDY GROUP
 ----
 <h1 align="center"> Convolutional Neural Network (CNN) </h1>
 
-
 <p align="center">
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" style="vertical-align:middle">
     <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" style="vertical-align:middle">
     <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" style="vertical-align:middle">
 </p>
 
+## Defini Convolutional Neural Network
+
+## Arsitektur Convolutional Neural Network
+
 <p align="center">
     <img src="contents/overview cnn.ppm" alt="overview cnn" width="480" style="vertical-align:middle">
 </p>
 
-## Convolution Backbone
+### Convolution Backbone
 
-### Convolution Layer
+#### Convolution Layer
 
 Convolution → Ektraksi Ciri (Feature Extraction)
 
@@ -44,14 +47,14 @@ tf.keras.layers.Conv2D(
 - activation → fungsi aktivasi untuk digunakan
 - input_shape → input gambar
 
-### Batch Normalization
+#### Batch Normalization
 Batch Normalization → mengurangi pergeseran kovarian atau menyamakan distribusi setiap nilai input yang selalau berubah karena perubahan pada layer sebelumnya selama proses training.
 
 ```
 tf.keras.layers.BatchNormalization()
 ```
 
-### Pooling Layer
+#### Pooling Layer
 
 Pooling → downsampling / mengurangi dimensi → menyimpan informasi penting
 
@@ -73,9 +76,9 @@ tf.keras.layers.MaxPool2D(
     - valid → tidak ada padding
     - same → padding nol merata kiri/kanan/atas/bawah
 
-## Classifier Head (ANN)
+### Classifier Head (ANN)
 
-### Flatten dan Global Average Pooling
+#### Flatten dan Global Average Pooling
 
 Flatten dan Global Average Pooling → input layer
 
@@ -88,7 +91,7 @@ Flatten dan Global Average Pooling → input layer
 |      hxwxd (1 dimension)   |               d (1 dimension)            |
 | tf.keras.layers.Flatten()  | tf.keras.layers.GlobalAveragePooling2D() |
 
-### Hidden Layer
+#### Hidden Layer
 
   ```
     tf.keras.layers.Dense(units, activation=None)
@@ -106,7 +109,7 @@ Flatten dan Global Average Pooling → input layer
   tf.keras.layers.Dropout(rate)
   ```
   
-### Output Layer
+#### Output Layer
 
   ```
     tf.keras.layers.Dense(units, activation=None)
