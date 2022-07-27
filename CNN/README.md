@@ -13,7 +13,7 @@ BANNER STUDY GROUP
     <img src="contents/overview cnn.ppm" alt="overview cnn" width="480" style="vertical-align:middle">
 </p>
 
-## Input + Convolution Backbone
+## Convolution Backbone
 
 ### Convolution Layer
 
