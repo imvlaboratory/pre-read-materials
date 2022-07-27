@@ -8,6 +8,10 @@ BANNER STUDY GROUP
     <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" style="vertical-align:middle">
 </p>
 
+## Definisi Artificial Neural Network
+
+## Arsitektur Artificial Neural Network (ANN)
+
 <p align="center">
     <img src="contents/ANN.png" alt="ANN/DNN" width="480" style="vertical-align:middle">
 </p>
