@@ -44,6 +44,13 @@ tf.keras.layers.Conv2D(
 - activation → fungsi aktivasi untuk digunakan
 - input_shape → input gambar
 
+### Batch Normalization
+Batch Normalization → mengurangi pergeseran kovarian atau menyamakan distribusi setiap nilai input yang selalau berubah karena perubahan pada layer sebelumnya selama proses training.
+
+```
+tf.keras.layers.BatchNormalization()
+```
+
 ### Pooling Layer
 
 Pooling → downsampling / mengurangi dimensi → menyimpan informasi penting
@@ -112,3 +119,6 @@ Flatten dan Global Average Pooling → input layer
     |   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
     |   softmax   |   categorical     |     categorical_crossentropy → [1 0 0] |
     |   softmax   |   categorical     |  sparse_categorical_crossentropy → [1] |
+
+---
+- [cat vs dog](https://colab.research.google.com/drive/1N3W4rkGrEUKcbdDKAeKGEIOGRgVPiOXF?usp=sharing)
