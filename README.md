@@ -9,4 +9,7 @@ BANNER STUDY GROUP
 # Definisi Artificial Intelligence
 ## Perbedaan Machine Learning dan Deep Learning
 
+## Computer Vision
+## Image Classification
+
 # Pengenalan Library untuk Membangun Artificial Intelligence
