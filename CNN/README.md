@@ -87,7 +87,7 @@ tf.keras.layers.MaxPool2D(
 Flatten dan Global Average Pooling berperan sebagai `input layer`.
 
 <p align="center">
-    <img src="contents/fully connected layer vs global average pooling.png" alt="fully connected layer vs global average pooling" width="640" style="vertical align:middle">
+    <img src="contents/fully connected layer vs global average pooling.png" alt="flatten vs global average pooling" width="640" style="vertical align:middle">
 </p>
 
 |   Flatten    |    Global Average Pooling                |
@@ -124,7 +124,11 @@ tf.keras.layers.Dense(units, activation=None)
 |   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
 |   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
 
-## Stratego Proses Pembelajaran
+## Strategi Proses Pembelajaran
+
+<p align="center">
+    <img src="contents/Strategi Proses Pembelajaran.png" alt="Stratego Proses Pembelajaran" width="640" style="vertical align:middle">
+</p>
 
 ### Modifikasi Network
 - Merubah arsitektur, misalnya menambah jumlah hidden layer, jumlah neuron, atau jenis arsitektur lain
