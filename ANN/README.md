@@ -17,22 +17,31 @@ BANNER STUDY GROUP
 </p>
 
 <br>Bagian-bagian Artificial Neural Network (ANN) / Dense Neural Network sebagai berikut:<br>
+
 ### Input Layer
 
+Ukuran input sesuai dengan jumlah fitur pada data input.
+
   ```
-    tf.keras.Input(shape=[height, width, color_channels])
+  tf.keras.Input(shape=[height, width, color_channels])
   ```
   ```
-    tf.keras.layers.InputLayer(input_shape=(height, width, color_channels))
+  tf.keras.layers.InputLayer(input_shape=(height, width, color_channels))
   ```
   ```
-    tf.keras.layers.Dense\Conv2D\Flatten(input_shape=(height, width, color_channels))
+  tf.keras.layers.Dense\Conv2D\Flatten(input_shape=(height, width, color_channels))
   ```
   - input_shape/shape → dimensi ruang input
 
 ### Hidden Layer
+
+Jumlah hidden layer sebaiknya disesuaikan dengan kompleksitas permasalahan.
+- Semakin banyak jumlah layer memerlukan komputasi waktu yang lebih lama
+- Semakin banyak jumlah node (neuron) memungkinkan mempelajari pola yang lebih rumit
+- Untuk mencegah overfitting sebaiknya menambah jumlah node (neuron) secara bertahap
+
   ```
-    tf.keras.layers.Dense(units, activation=None)
+  tf.keras.layers.Dense(units, activation=None)
   ```
   - units → dimensi ruang output
   - activation → fungsi aktivasi untuk digunakan → relu
@@ -50,8 +59,12 @@ BANNER STUDY GROUP
   
 ### Output Layer
 
+Jumlah neuron sesuai dengan permasalahan.
+- Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
+- Untuk `klasifikasi multiclass atau categorical` menggunakan `jumlah neuron sesuai jumlah kelas`.
+
   ```
-    tf.keras.layers.Dense(units, activation=None)
+  tf.keras.layers.Dense(units, activation=None)
   ```
   - units → dimensi ruang output
   - activation → fungsi aktivasi untuk digunakan
@@ -63,6 +76,9 @@ BANNER STUDY GROUP
     |   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
 
 ----
+
+Visualisasi: [ANN](https://playground.tensorflow.org/)
+
 Google Colabs: 
 - [Fashion-MNIST](https://colab.research.google.com/drive/1ZwvOVEfuFmZ7tkQq4r-1kla9xpofMF5_?usp=sharing)
 - [Handwritten Digits-MNIST](https://colab.research.google.com/drive/1U1xKoEehgWVvq5cEuf1A4LcurWSt1WFA?usp=sharing)
