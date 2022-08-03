@@ -40,22 +40,11 @@ Jumlah hidden layer sebaiknya disesuaikan dengan kompleksitas permasalahan.
 - Semakin banyak jumlah node (neuron) memungkinkan mempelajari pola yang lebih rumit
 - Untuk mencegah overfitting sebaiknya menambah jumlah node (neuron) secara bertahap
 
-  ```
-  tf.keras.layers.Dense(units, activation=None)
-  ```
-  - units → dimensi ruang output
-  - activation → fungsi aktivasi untuk digunakan → relu
-  
-  Dropout → proses mencegah terjadinya overfitting dan juga mempercepat proses learning.
-  
-  <p align="center">
-    <img src="contents/dropout.jpg" alt="dropout" width="640" style="vertical-align:middle">
-  </p>
-  
-  ```
-  tf.keras.layers.Dropout(rate)
-  ```
-  
+```
+tf.keras.layers.Dense(units, activation=None)
+```
+- units → dimensi ruang output
+- activation → fungsi aktivasi untuk digunakan → relu
   
 ### Output Layer
 
@@ -63,17 +52,17 @@ Jumlah neuron sesuai dengan permasalahan.
 - Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
 - Untuk `klasifikasi multiclass atau categorical` menggunakan `jumlah neuron sesuai jumlah kelas`.
 
-  ```
-  tf.keras.layers.Dense(units, activation=None)
-  ```
-  - units → dimensi ruang output
-  - activation → fungsi aktivasi untuk digunakan
-  
-    | activation  | output/class mode | loss function | 
-    |     ---     |        ---        |     ---       |
-    |   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
-    |   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
-    |   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
+```
+tf.keras.layers.Dense(units, activation=None)
+```
+- units → dimensi ruang output
+- activation → fungsi aktivasi untuk digunakan
+
+| activation  | output/class mode | loss function | 
+|     ---     |        ---        |     ---       |
+|   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
+|   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
+|   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
 
 ----
 
