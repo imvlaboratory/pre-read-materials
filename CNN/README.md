@@ -20,7 +20,11 @@ BANNER STUDY GROUP
 
 #### Convolution Layer
 
-Convolution → Ektraksi Ciri (Feature Extraction)
+Convolutional layer merupakan proses konvolusi citra input dengan filter yang 
+menghasilkan `feature map` (fitur-fitur penting sebuah gambar).
+
+Proses konvolusi citra dengan filter dilakukan `sliding filter` mulai dari kiri atas dari 
+matrik citra sampai kanan bawah
 
 <p align="center">
     <img src="contents/convolution.gif" alt="convolution" width="360" style="vertical-align:left">
@@ -56,7 +60,7 @@ tf.keras.layers.BatchNormalization()
 
 #### Pooling Layer
 
-Pooling → downsampling / mengurangi dimensi → menyimpan informasi penting
+Pooling layer berperan untuk memperkecil dimensi feature image (downsampling) dan menyimpan informasi penting.
 
 <p align="center">
     <img src="contents/pooling.png" alt="pooling" width="640" style="vertical align:middle">
@@ -80,48 +84,73 @@ tf.keras.layers.MaxPool2D(
 
 #### Flatten dan Global Average Pooling
 
-Flatten dan Global Average Pooling → input layer
+Flatten dan Global Average Pooling berperan sebagai `input layer`.
 
 <p align="center">
     <img src="contents/fully connected layer vs global average pooling.png" alt="fully connected layer vs global average pooling" width="640" style="vertical align:middle">
 </p>
 
-|   Fully Connected Layer    |    Global Average Pooling                |
+|   Flatten    |    Global Average Pooling                |
 |            ---             |                       ---                |
 |      hxwxd (1 dimension)   |               d (1 dimension)            |
 | tf.keras.layers.Flatten()  | tf.keras.layers.GlobalAveragePooling2D() |
 
-#### Hidden Layer
+### Hidden Layer
 
-  ```
-    tf.keras.layers.Dense(units, activation=None)
-  ```
-  - units → dimensi ruang output
-  - activation → fungsi aktivasi untuk digunakan → relu
+```
+tf.keras.layers.Dense(units, activation=None)
+```
+- units → dimensi ruang output
+- activation → fungsi aktivasi untuk digunakan → relu
   
-  Dropout → proses mencegah terjadinya overfitting dan juga mempercepat proses learning.
   
-  <p align="center">
-    <img src="contents/dropout.jpg" alt="dropout" width="640" style="vertical-align:middle">
-  </p>
-  
-  ```
-  tf.keras.layers.Dropout(rate)
-  ```
-  
-#### Output Layer
+### Output Layer
 
-  ```
-    tf.keras.layers.Dense(units, activation=None)
-  ```
-  - units → dimensi ruang output
-  - activation → fungsi aktivasi untuk digunakan
+Jumlah neuron sesuai dengan permasalahan.
+- Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
+- Untuk `klasifikasi multiclass atau categorical` menggunakan `jumlah neuron sesuai jumlah kelas`.
 
-    | activation  | output/class mode | loss function | 
-    |     ---     |        ---        |     ---       |
-    |   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
-    |   softmax   |   categorical     |     categorical_crossentropy → [1 0 0] |
-    |   softmax   |   categorical     |  sparse_categorical_crossentropy → [1] |
+```
+tf.keras.layers.Dense(units, activation=None)
+```
+- units → dimensi ruang output
+  - binary → satu neuron.
+  - categorical → jumlah neuron sesuai jumlah kelas.
+- activation → fungsi aktivasi untuk digunakan
+
+| activation  | output/class mode | loss function | 
+|     ---     |        ---        |     ---       |
+|   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
+|   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
+|   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
+
+## Stratego Proses Pembelajaran
+
+### Modifikasi Network
+- Merubah arsitektur, misalnya menambah jumlah hidden layer, jumlah neuron, atau jenis arsitektur lain
+- Merubah fungsi aktivasi, misalnya menggunakan ReLU
+
+### Optimasi parameter
+Nilai learning rate berpengaruh pada perhitungan bobot baru, umumnya penggunaan learning rate yang menyesuaikan nilai gradien (adaptive learning rate) menunjukkan kinerja model yang lebih baik. Contoh algoritma adaptive learning rate Adagrad, Adadelta, Adam, AdaSecant, dan RMSprop. 
+
+### Mencegah Overfitting
+
+- Regularisasi dilakukan untuk mengurangi generalization error dengan mencegah model lebih 
+kompleks.
+    - Regularization L1 norm dan Regularization L2 norm (weight decay)
+    
+- Dropout adalah proses mencegah terjadinya overfitting dan juga mempercepat proses learning.
+  
+    <p align="center">
+      <img src="contents/dropout.jpg" alt="dropout" width="640" style="vertical-align:middle">
+    </p>
+
+    ```
+    tf.keras.layers.Dropout(rate)
+    ```
+- Early Stopping adalah iterasi pada saat training dihentikan jika `generalization error/loss validation` mulai naik.
+
+- Augmentasi Data adalah menambah data training.
 
 ---
 - [cat vs dog](https://colab.research.google.com/drive/1N3W4rkGrEUKcbdDKAeKGEIOGRgVPiOXF?usp=sharing)
