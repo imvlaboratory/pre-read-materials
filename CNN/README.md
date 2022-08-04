@@ -18,7 +18,7 @@ BANNER STUDY GROUP
 
 ### Convolution Backbone
 
-#### Convolution Layer
+#### 1. Convolution Layer
 
 Convolutional layer merupakan proses konvolusi citra input dengan filter yang 
 menghasilkan `feature map` (fitur-fitur penting sebuah gambar).
@@ -58,7 +58,7 @@ Batch Normalization → mengurangi pergeseran kovarian atau menyamakan distribus
 tf.keras.layers.BatchNormalization()
 ```
 
-#### Pooling Layer
+#### 2. Pooling Layer
 
 Pooling layer berperan untuk memperkecil dimensi feature image (downsampling) dan menyimpan informasi penting.
 
@@ -82,7 +82,7 @@ tf.keras.layers.MaxPool2D(
 
 ### Classifier Head (ANN)
 
-#### Flatten dan Global Average Pooling
+#### 1. Flatten dan Global Average Pooling
 
 Flatten dan Global Average Pooling berperan sebagai `input layer`.
 
@@ -95,7 +95,7 @@ Flatten dan Global Average Pooling berperan sebagai `input layer`.
 |      hxwxd (1 dimension)   |               d (1 dimension)            |
 | tf.keras.layers.Flatten()  | tf.keras.layers.GlobalAveragePooling2D() |
 
-### Hidden Layer
+### 2. Hidden Layer
 
 ```
 tf.keras.layers.Dense(units, activation=None)
@@ -104,7 +104,7 @@ tf.keras.layers.Dense(units, activation=None)
 - activation → fungsi aktivasi untuk digunakan → relu
   
   
-### Output Layer
+### 3. Output Layer
 
 Jumlah neuron sesuai dengan permasalahan.
 - Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
@@ -130,14 +130,14 @@ tf.keras.layers.Dense(units, activation=None)
     <img src="contents/Strategi Proses Pembelajaran.png" alt="Stratego Proses Pembelajaran" width="640" style="vertical align:middle">
 </p>
 
-### Modifikasi Network
+### 1. Modifikasi Network
 - Merubah arsitektur, misalnya menambah jumlah hidden layer, jumlah neuron, atau jenis arsitektur lain
 - Merubah fungsi aktivasi, misalnya menggunakan ReLU
 
-### Optimasi parameter
-Nilai learning rate berpengaruh pada perhitungan bobot baru, umumnya penggunaan learning rate yang menyesuaikan nilai gradien (adaptive learning rate) menunjukkan kinerja model yang lebih baik. Contoh algoritma adaptive learning rate Adagrad, Adadelta, Adam, AdaSecant, dan RMSprop. 
+### 2. Optimasi parameter
+Nilai learning rate berpengaruh pada perhitungan bobot baru, umumnya penggunaan learning rate yang menyesuaikan nilai gradien (adaptive learning rate) menunjukkan kinerja model yang lebih baik. Contoh algoritma adaptive learning rate seperti Adagrad, Adadelta, Adam, AdaSecant, dan RMSprop. 
 
-### Mencegah Overfitting
+### 3. Mencegah Overfitting
 
 - Regularisasi dilakukan untuk mengurangi generalization error dengan mencegah model lebih 
 kompleks.
