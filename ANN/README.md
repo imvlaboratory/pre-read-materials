@@ -18,7 +18,7 @@ BANNER STUDY GROUP
 
 <br>Bagian-bagian Artificial Neural Network (ANN) / Dense Neural Network sebagai berikut:<br>
 
-### Input Layer
+### 1. Input Layer
 
 Ukuran input sesuai dengan jumlah fitur pada data input.
 
@@ -33,7 +33,7 @@ Ukuran input sesuai dengan jumlah fitur pada data input.
   ```
   - input_shape/shape → dimensi ruang input
 
-### Hidden Layer
+### 2. Hidden Layer
 
 Jumlah hidden layer sebaiknya disesuaikan dengan kompleksitas permasalahan.
 - Semakin banyak jumlah layer memerlukan komputasi waktu yang lebih lama
@@ -46,7 +46,7 @@ tf.keras.layers.Dense(units, activation=None)
 - units → dimensi ruang output
 - activation → fungsi aktivasi untuk digunakan → relu
   
-### Output Layer
+### 3. Output Layer
 
 Jumlah neuron sesuai dengan permasalahan.
 - Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
