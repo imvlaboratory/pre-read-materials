@@ -51,14 +51,14 @@ tf.keras.layers.Conv2D(
 - activation → fungsi aktivasi untuk digunakan
 - input_shape → input gambar
 
-#### Batch Normalization
-Batch Normalization → mengurangi pergeseran kovarian atau menyamakan distribusi setiap nilai input yang selalau berubah karena perubahan pada layer sebelumnya selama proses training.
+#### 2. Batch Normalization
+Batch Normalization berperan untuk mengurangi pergeseran kovarian atau menyamakan distribusi setiap nilai input yang selalau berubah karena perubahan pada layer sebelumnya selama proses training.
 
 ```
 tf.keras.layers.BatchNormalization()
 ```
 
-#### 2. Pooling Layer
+#### 3. Pooling Layer
 
 Pooling layer berperan untuk memperkecil dimensi feature image (downsampling) dan menyimpan informasi penting.
 
