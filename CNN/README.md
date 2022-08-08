@@ -12,11 +12,11 @@ BANNER STUDY GROUP
 
 Convolutional Neural Network (CNN/ConvNet) merupakan bagian dari deep neural network, yakni jenis jaringan saraf tiruan yang umumnya digunakan dalam pengenalan dan pemrosesan gambar. Algoritma ini memiliki dua bagian utama yaitu bagian ekstraksi fitur dan bagian klasifikasi.
 
-## Arsitektur Convolutional Neural Network
-
 <p align="center">
     <img src="contents/overview cnn.ppm" alt="overview cnn" width="480" style="vertical-align:middle">
 </p>
+
+## Arsitektur Convolutional Neural Network
 
 ### Convolution Backbone
 
