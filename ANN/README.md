@@ -10,10 +10,16 @@ BANNER STUDY GROUP
 
 ## Definisi Artificial Neural Network
 
+Salah satu metode mesin pembelajaran yang terinspirasi oleh cara kerja jaringan saraf biologis di otak manusia. Konsep ANN bermula pada artikel dari Waffen McCulloch dan Walter Pitts pada tahun 1943 yaitu mencoba untuk memformulasikan model matematis sel-sel otak manusia.
+
+<p align="center">
+    <img src="contents/Definisi ANN.png" alt="ANN/DNN" width="1080" style="vertical-align:middle">
+</p>
+
 ## Arsitektur Artificial Neural Network (ANN)
 
 <p align="center">
-    <img src="contents/ANN.png" alt="ANN/DNN" width="480" style="vertical-align:middle">
+    <img src="contents/ANN.gif" alt="ANN/DNN" width="540" style="vertical-align:middle">
 </p>
 
 <br>Bagian-bagian Artificial Neural Network (ANN) / Dense Neural Network sebagai berikut:<br>
@@ -22,16 +28,16 @@ BANNER STUDY GROUP
 
 Ukuran input sesuai dengan jumlah fitur pada data input.
 
-  ```
-  tf.keras.Input(shape=[height, width, color_channels])
-  ```
-  ```
-  tf.keras.layers.InputLayer(input_shape=(height, width, color_channels))
-  ```
-  ```
-  tf.keras.layers.Dense\Conv2D\Flatten(input_shape=(height, width, color_channels))
-  ```
-  - input_shape/shape → dimensi ruang input
+```
+tf.keras.Input(shape=[height, width, color_channels])
+```
+```
+tf.keras.layers.InputLayer(input_shape=(height, width, color_channels))
+```
+```
+tf.keras.layers.Dense\Conv2D\Flatten(input_shape=(height, width, color_channels))
+```
+- input_shape/shape → dimensi ruang input
 
 ### 2. Hidden Layer
 
