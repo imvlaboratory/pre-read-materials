@@ -179,7 +179,7 @@ kompleks.
     ```
 - Early Stopping adalah iterasi pada saat training dihentikan jika `generalization error/loss validation` mulai naik.
 
-- Augmentasi Data adalah menambah data training.
+- Augmentasi Data adalah menambah data training. Augmentasi data menggunakan [Image Data Generator](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator).
 
 ---
 
