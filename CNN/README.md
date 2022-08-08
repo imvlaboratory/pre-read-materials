@@ -18,18 +18,21 @@ BANNER STUDY GROUP
 
 ### Convolution Backbone
 
+<p align="center">
+    <img src="contents/conv backbone.gif" width="480" style="vertical-align:middle">
+</p>
+
 #### 1. Convolution Layer
 
-Convolutional layer merupakan proses konvolusi citra input dengan filter yang 
-menghasilkan `feature map` (fitur-fitur penting sebuah gambar).
+Convolutional layer merupakan proses konvolusi citra input dengan filter yang menghasilkan `feature map` (fitur-fitur penting sebuah gambar memberikan informasi jauh lebih besar dibanding gambar input itu sendiri).
 
-Proses konvolusi citra dengan filter dilakukan `sliding filter` mulai dari kiri atas dari 
-matrik citra sampai kanan bawah
+Proses konvolusi citra dengan filter dilakukan `sliding filter` mulai dari kiri atas dari matrik citra sampai kanan bawah.
 
 <p align="center">
-    <img src="contents/convolution.gif" alt="convolution" width="360" style="vertical-align:left">
-    <img src="contents/convolution.png" alt="convolution" width="640" style="vertical-align:right">
+    <img src="contents/conv.gif" alt="convolution" width="720" style="vertical-align:left">
 </p>
+
+Convolutional layer akan mencari kernel/weight yang tepat. Semakin banyak kernel maka semakin banyak jenis fitur. Tujuan Convolutional layer ditumpuk agar informasi yang didapatkan semakin lebih bermakna.
 
 ```
 tf.keras.layers.Conv2D(
@@ -53,6 +56,10 @@ tf.keras.layers.Conv2D(
 
 #### 2. Batch Normalization
 Batch Normalization berperan untuk mengurangi pergeseran kovarian atau menyamakan distribusi setiap nilai input yang selalau berubah karena perubahan pada layer sebelumnya selama proses training.
+
+<p align="center">
+    <img src="contents/batchnorm.png" width="480" style="vertical-align:left">
+</p>
 
 ```
 tf.keras.layers.BatchNormalization()
