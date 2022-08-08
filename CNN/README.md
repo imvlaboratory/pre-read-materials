@@ -27,8 +27,7 @@ Proses konvolusi citra dengan filter dilakukan `sliding filter` mulai dari kiri 
 matrik citra sampai kanan bawah
 
 <p align="center">
-    <img src="contents/convolution.gif" alt="convolution" width="360" style="vertical-align:left">
-    <img src="contents/convolution.png" alt="convolution" width="640" style="vertical-align:right">
+    <img src="contents/conv.gif" alt="convolution" width="480" style="vertical-align:left">
 </p>
 
 ```
