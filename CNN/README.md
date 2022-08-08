@@ -8,7 +8,9 @@ BANNER STUDY GROUP
     <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" style="vertical-align:middle">
 </p>
 
-## Defini Convolutional Neural Network
+## Definisi Convolutional Neural Network
+
+Convolutional Neural Network (CNN/ConvNet) merupakan bagian dari deep neural network, yakni jenis jaringan saraf tiruan yang umumnya digunakan dalam pengenalan dan pemrosesan gambar. Algoritma ini memiliki dua bagian utama yaitu bagian ekstraksi fitur dan bagian klasifikasi.
 
 ## Arsitektur Convolutional Neural Network
 
@@ -70,11 +72,23 @@ tf.keras.layers.BatchNormalization()
 Pooling layer berperan untuk memperkecil dimensi feature image (downsampling) dan menyimpan informasi penting.
 
 <p align="center">
+    <img src="contents/pooling.gif" alt="pooling" width="640" style="vertical align:middle">
+</p>
+
+<p align="center">
     <img src="contents/pooling.png" alt="pooling" width="640" style="vertical align:middle">
 </p>
 
 ```
 tf.keras.layers.MaxPool2D(
+    pool_size=(2, 2),
+    strides=None,
+    padding='valid',
+)
+```
+
+```
+tf.keras.layers.AveragePooling2D(
     pool_size=(2, 2),
     strides=None,
     padding='valid',
@@ -88,6 +102,10 @@ tf.keras.layers.MaxPool2D(
     - same → padding nol merata kiri/kanan/atas/bawah
 
 ### Classifier Head (ANN)
+
+<p align="center">
+    <img src="contents/ANN.gif"  width="480" style="vertical align:middle">
+</p>
 
 #### 1. Flatten dan Global Average Pooling
 
