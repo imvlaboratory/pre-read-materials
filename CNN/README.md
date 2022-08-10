@@ -36,7 +36,7 @@ Proses konvolusi citra dengan filter dilakukan `sliding filter` mulai dari kiri 
 
 Convolutional layer akan mencari kernel/weight yang tepat. Semakin banyak kernel maka semakin banyak jenis fitur. Tujuan Convolutional layer ditumpuk agar informasi yang didapatkan semakin lebih bermakna.
 
-```
+```python
 tf.keras.layers.Conv2D(
     filters,
     kernel_size,
@@ -63,7 +63,7 @@ Batch Normalization berperan untuk mengurangi pergeseran kovarian atau menyamaka
     <img src="contents/batchnorm.png" width="480" style="vertical-align:left">
 </p>
 
-```
+```python
 tf.keras.layers.BatchNormalization()
 ```
 
@@ -79,7 +79,7 @@ Pooling layer berperan untuk memperkecil dimensi feature image (downsampling) da
     <img src="contents/pooling.png" alt="pooling" width="640" style="vertical align:middle">
 </p>
 
-```
+```python
 tf.keras.layers.MaxPool2D(
     pool_size=(2, 2),
     strides=None,
@@ -87,7 +87,7 @@ tf.keras.layers.MaxPool2D(
 )
 ```
 
-```
+```python
 tf.keras.layers.AveragePooling2D(
     pool_size=(2, 2),
     strides=None,
@@ -107,22 +107,29 @@ tf.keras.layers.AveragePooling2D(
     <img src="contents/ANN.gif"  width="480" style="vertical align:middle">
 </p>
 
-#### 1. Flatten dan Global Average Pooling
+#### 1. Flatten dan Global Pooling
 
-Flatten dan Global Average Pooling berperan sebagai `input layer`.
+Flatten dan Global Pooling berperan sebagai `input layer`.
 
 <p align="center">
     <img src="contents/fully connected layer vs global average pooling.png" alt="flatten vs global average pooling" width="640" style="vertical align:middle">
 </p>
 
-|   Flatten    |    Global Average Pooling                |
-|            ---             |                       ---                |
-|      hxwxd (1 dimension)   |               d (1 dimension)            |
-| tf.keras.layers.Flatten()  | tf.keras.layers.GlobalAveragePooling2D() |
+- Flatten → hxwxd (1 dimension)
+  ```python
+  tf.keras.layers.Flatten()
+  ```
+- Global Average Pooling -> d (1 dimension)
+  ```python
+  tf.keras.layers.GlobalAveragePooling2D()
+  ```
+  ```python
+  tf.keras.layers.GlobalMaxPool2D()
+  ```
 
 ### 2. Hidden Layer
 
-```
+```python
 tf.keras.layers.Dense(units, activation=None)
 ```
 - units → dimensi ruang output
@@ -135,19 +142,19 @@ Jumlah neuron sesuai dengan permasalahan.
 - Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
 - Untuk `klasifikasi multiclass atau categorical` menggunakan `jumlah neuron sesuai jumlah kelas`.
 
-```
+```python
 tf.keras.layers.Dense(units, activation=None)
 ```
 - units → dimensi ruang output
   - binary → satu neuron.
   - categorical → jumlah neuron sesuai jumlah kelas.
 - activation → fungsi aktivasi untuk digunakan
-
-| activation  | output/class mode | loss function | 
-|     ---     |        ---        |     ---       |
-|   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
-|   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
-|   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
+  
+  | activation  | output/class mode | loss function | 
+  |     ---     |        ---        |     ---       |
+  |   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
+  |   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
+  |   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
 
 ## Strategi Proses Pembelajaran
 
@@ -174,7 +181,7 @@ kompleks.
       <img src="contents/dropout.jpg" alt="dropout" width="640" style="vertical-align:middle">
     </p>
 
-    ```
+    ```python
     tf.keras.layers.Dropout(rate)
     ```
 - Early Stopping adalah iterasi pada saat training dihentikan jika `generalization error/loss validation` mulai naik.
