@@ -28,14 +28,16 @@ Salah satu metode mesin pembelajaran yang terinspirasi oleh cara kerja jaringan 
 
 Ukuran input sesuai dengan jumlah fitur pada data input.
 
-```
+```python
 tf.keras.Input(shape=[height, width, color_channels])
 ```
-```
+```python
 tf.keras.layers.InputLayer(input_shape=(height, width, color_channels))
 ```
-```
-tf.keras.layers.Dense\Conv2D\Flatten(input_shape=(height, width, color_channels))
+```python
+tf.keras.layers.Conv2D(input_shape=(height, width, color_channels))
+tf.keras.layers.Flatten(input_shape=(height, width, color_channels))
+tf.keras.layers.Dense(input_shape=(height, width, color_channels))
 ```
 - input_shape/shape → dimensi ruang input
 
@@ -46,7 +48,7 @@ Jumlah hidden layer sebaiknya disesuaikan dengan kompleksitas permasalahan.
 - Semakin banyak jumlah node (neuron) memungkinkan mempelajari pola yang lebih rumit
 - Untuk mencegah overfitting sebaiknya menambah jumlah node (neuron) secara bertahap
 
-```
+```python
 tf.keras.layers.Dense(units, activation=None)
 ```
 - units → dimensi ruang output
@@ -58,7 +60,7 @@ Jumlah neuron sesuai dengan permasalahan.
 - Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
 - Untuk `klasifikasi multiclass atau categorical` menggunakan `jumlah neuron sesuai jumlah kelas`.
 
-```
+```python
 tf.keras.layers.Dense(units, activation=None)
 ```
 - units → dimensi ruang output
