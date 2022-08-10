@@ -36,7 +36,11 @@ tf.keras.layers.InputLayer(input_shape=(height, width, color_channels))
 ```
 ```python
 tf.keras.layers.Conv2D(input_shape=(height, width, color_channels))
+```
+```python
 tf.keras.layers.Flatten(input_shape=(height, width, color_channels))
+```
+```python
 tf.keras.layers.Dense(input_shape=(height, width, color_channels))
 ```
 - input_shape/shape → dimensi ruang input
