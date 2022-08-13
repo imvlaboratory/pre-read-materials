@@ -8,9 +8,10 @@ BANNER STUDY GROUP
     <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" style="vertical-align:middle">
 </p>
 
+
 ## Definisi Convolutional Neural Network
 
-Convolutional Neural Network (CNN/ConvNet) merupakan bagian dari deep neural network, yakni jenis jaringan saraf tiruan yang umumnya digunakan dalam pengenalan dan pemrosesan gambar. Algoritma ini memiliki dua bagian utama yaitu bagian ekstraksi fitur dan bagian klasifikasi.
+Convolutional Neural Network (CNN/ConvNet) merupakan bagian dari deep neural network, yakni jenis jaringan saraf tiruan yang umumnya digunakan dalam pengenalan dan pemrosesan gambar. Algoritma ini memiliki dua bagian utama yaitu bagian ekstraksi fitur dan bagian klasifikasi. Bagian ekstraksi fitur gambar dilakukan oleh Convolutional Backbone, sedangkan untuk bagian klasifikasi dilakukan oleh Classifier Head yang berisi Artificial Neural Network.
 
 <p align="center">
     <img src="contents/overview cnn.ppm" alt="overview cnn" width="480" style="vertical-align:middle">
@@ -18,7 +19,7 @@ Convolutional Neural Network (CNN/ConvNet) merupakan bagian dari deep neural net
 
 ## Arsitektur Convolutional Neural Network
 
-### Convolution Backbone
+### Convolutional Backbone
 
 <p align="center">
     <img src="contents/conv backbone.gif" width="480" style="vertical-align:middle">
