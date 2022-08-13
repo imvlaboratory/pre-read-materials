@@ -102,7 +102,7 @@ tf.keras.layers.AveragePooling2D(
     - valid → tidak ada padding
     - same → padding nol merata kiri/kanan/atas/bawah
 
-#### Visualisasi Proses Konvolusi pada Gambar
+#### Visualisasi Proses Konvolusi dan Pooling pada Gambar
 
 Berikut adalah salah satu contoh bagaimana gambar anjing diproses setelah melewati Convolutional Backbone yang terdiri dari beberapa convolution layer dan max pooling layer. Terlihat pada gambar, fitur-fitur penting pada wajah anjing akan semakin muncul setelah dilakukan proses konvolusi dan pooling. Proses ini akan mempermudah model dalam mengenali gambar yang akan dilatih dan diprediksi nantinya.
 
