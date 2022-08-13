@@ -102,6 +102,10 @@ tf.keras.layers.AveragePooling2D(
     - valid → tidak ada padding
     - same → padding nol merata kiri/kanan/atas/bawah
 
+#### Visualisasi Proses Konvolusi pada Gambar
+
+Berikut adalah gambar bagaimana gambar anjing diproses setelah melewati Convolutional Backbone yang terdiri dari beberapa convolution layer dan max pooling layer
+
 ### Classifier Head (ANN)
 
 <p align="center">
