@@ -136,7 +136,7 @@ Flatten dan Global Pooling berperan sebagai `input layer`.
   tf.keras.layers.GlobalMaxPool2D()
   ```
 
-### 2. Hidden Layer
+#### 2. Hidden Layer
 
 ```python
 tf.keras.layers.Dense(units, activation=None)
@@ -145,7 +145,7 @@ tf.keras.layers.Dense(units, activation=None)
 - activation → fungsi aktivasi untuk digunakan → relu
   
   
-### 3. Output Layer
+#### 3. Output Layer
 
 Jumlah neuron sesuai dengan permasalahan.
 - Untuk `klasifikasi binary dan regresi` menggunakan `satu neuron`.
