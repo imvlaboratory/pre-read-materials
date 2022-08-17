@@ -37,6 +37,15 @@ Proses konvolusi citra dengan filter dilakukan `sliding filter` mulai dari kiri 
 
 Convolutional layer akan mencari kernel/weight yang tepat. Semakin banyak kernel maka semakin banyak jenis fitur. Tujuan Convolutional layer ditumpuk agar informasi yang didapatkan semakin lebih bermakna.
 
+<p align="center">
+    <img src="contents/conv stride 1 pad 0.gif" alt="convolution" width="360" style="vertical-align:left">
+    <img src="contents/conv stride 1 pad 1.gif" alt="convolution" width="360" style="vertical-align:left">
+</p>
+<p align="center">
+    <img src="contents/conv stride 2 pad 0.gif" alt="convolution" width="360" style="vertical-align:left">
+    <img src="contents/conv stride 2 pad 1.gif" alt="convolution" width="360" style="vertical-align:left">
+</p>
+
 ```python
 tf.keras.layers.Conv2D(
     filters,
@@ -73,11 +82,12 @@ tf.keras.layers.BatchNormalization()
 Pooling layer berperan untuk memperkecil dimensi feature image (downsampling) dan menyimpan informasi penting.
 
 <p align="center">
-    <img src="contents/pooling.gif" alt="pooling" width="640" style="vertical align:middle">
+    <img src="contents/pooling.png" alt="pooling" width="640" style="vertical align:middle">
 </p>
 
 <p align="center">
-    <img src="contents/pooling.png" alt="pooling" width="640" style="vertical align:middle">
+    <img src="contents/max pol stride 1 pad 1.gif" alt="convolution" width="360" style="vertical-align:left">
+    <img src="contents/max pol stride 2 pad 1.gif" alt="convolution" width="360" style="vertical-align:left">
 </p>
 
 ```python
@@ -173,7 +183,13 @@ tf.keras.layers.Dense(units, activation=None)
 
 ### 1. Modifikasi Network
 - Merubah arsitektur, misalnya menambah jumlah hidden layer, jumlah neuron, atau jenis arsitektur lain.
+  <p align="center">
+    <img src="contents/CNN architecture.ppm" width="540" style="vertical-align:left">
+  </p>
 - Merubah fungsi aktivasi, misalnya menggunakan ReLU (apabila x ≤ 0 maka x = 0 dan apabila x > 0 maka x = x).
+  <p align="center">
+    <img src="contents/Fungsi Aktivasi.gif" width="480" style="vertical-align:left">
+  </p>
 
 ### 2. [Optimasi parameter](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers?version=nightly)
 Nilai learning rate berpengaruh pada perhitungan bobot baru, umumnya penggunaan learning rate yang menyesuaikan nilai gradien (adaptive learning rate) menunjukkan kinerja model yang lebih baik. Contoh algoritma adaptive learning rate seperti Adagrad, Adadelta, Adam, AdaSecant, dan RMSprop.
