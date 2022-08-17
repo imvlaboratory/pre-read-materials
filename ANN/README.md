@@ -19,8 +19,8 @@ Salah satu metode mesin pembelajaran yang terinspirasi oleh cara kerja jaringan 
 ## Arsitektur Artificial Neural Network (ANN)
 
 <p align="center">
-    <img src="contents/ANN.gif" alt="ANN/DNN" width="540" style="vertical-align:middle">
-    <img src="contents/ANN weight.gif" width="540" style="vertical-align:middle">
+    <img src="contents/ANN.gif" alt="ANN/DNN" width="510" style="vertical-align:left">
+    <img src="contents/ANN weight.gif" width="480" style="vertical-align:left">
 </p>
 
 <br>Bagian-bagian Artificial Neural Network (ANN) / Dense Neural Network sebagai berikut:<br>
