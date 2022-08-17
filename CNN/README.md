@@ -172,19 +172,19 @@ tf.keras.layers.Dense(units, activation=None)
 </p>
 
 ### 1. Modifikasi Network
-- Merubah arsitektur, misalnya menambah jumlah hidden layer, jumlah neuron, atau jenis arsitektur lain
-- Merubah fungsi aktivasi, misalnya menggunakan ReLU
+- Merubah arsitektur, misalnya menambah jumlah hidden layer, jumlah neuron, atau jenis arsitektur lain.
+- Merubah fungsi aktivasi, misalnya menggunakan ReLU (apabila x ≤ 0 maka x = 0 dan apabila x > 0 maka x = x).
 
-### 2. Optimasi parameter
-Nilai learning rate berpengaruh pada perhitungan bobot baru, umumnya penggunaan learning rate yang menyesuaikan nilai gradien (adaptive learning rate) menunjukkan kinerja model yang lebih baik. Contoh algoritma adaptive learning rate seperti Adagrad, Adadelta, Adam, AdaSecant, dan RMSprop. 
+### 2. [Optimasi parameter](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers?version=nightly)
+Nilai learning rate berpengaruh pada perhitungan bobot baru, umumnya penggunaan learning rate yang menyesuaikan nilai gradien (adaptive learning rate) menunjukkan kinerja model yang lebih baik. Contoh algoritma adaptive learning rate seperti Adagrad, Adadelta, Adam, AdaSecant, dan RMSprop.
 
 ### 3. Mencegah Overfitting
 
 - Regularisasi dilakukan untuk mengurangi generalization error dengan mencegah model lebih 
 kompleks.
-    - Regularization L1 norm dan Regularization L2 norm (weight decay)
+    - [Regularization L1 norm dan Regularization L2](https://www.tensorflow.org/api_docs/python/tf/keras/regularizers) norm (weight decay)
     
-- Dropout adalah proses mencegah terjadinya overfitting dan juga mempercepat proses learning.
+- [Dropout](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout) adalah proses mencegah terjadinya overfitting dan juga mempercepat proses learning.
   
     <p align="center">
       <img src="contents/dropout.jpg" alt="dropout" width="640" style="vertical-align:middle">
@@ -193,7 +193,7 @@ kompleks.
     ```python
     tf.keras.layers.Dropout(rate)
     ```
-- Early Stopping adalah iterasi pada saat training dihentikan jika `generalization error/loss validation` mulai naik.
+- [Early Stopping](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping) adalah iterasi pada saat training dihentikan jika `generalization error/loss validation` mulai naik.
 
 - Augmentasi Data adalah menambah data training. Augmentasi data menggunakan [Image Data Generator](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator).
 
