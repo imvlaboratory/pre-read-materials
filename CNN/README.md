@@ -138,7 +138,7 @@ Flatten dan Global Pooling berperan sebagai `input layer`.
   ```python
   tf.keras.layers.Flatten()
   ```
-- Global Average Pooling -> d (1 dimension)
+- Global Pooling -> d (1 dimension)
   ```python
   tf.keras.layers.GlobalAveragePooling2D()
   ```
