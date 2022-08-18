@@ -69,13 +69,15 @@ Jumlah neuron sesuai dengan permasalahan.
 tf.keras.layers.Dense(units, activation=None)
 ```
 - units → dimensi ruang output
+  - binary → satu neuron.
+  - categorical → jumlah neuron sesuai jumlah kelas.
 - activation → fungsi aktivasi untuk digunakan
-
-| activation  | output/class mode | loss function | 
-|     ---     |        ---        |     ---       |
-|   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
-|   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
-|   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
+  
+  | activation  | output/class mode | loss function | 
+  |     ---     |        ---        |     ---       |
+  |   sigmoid   |      binary       |  binary_crossentropy → 0/1 |
+  |   softmax   |   categorical     |     categorical_crossentropy → [1 0] [0 1]|
+  |   softmax   |   categorical     |  sparse_categorical_crossentropy → [0] [1] |
 
 ----
 
