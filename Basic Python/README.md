@@ -1,4 +1,4 @@
-# Basic Python
+<h1 align="center"> Basic Python </h1>
 
 Terdapat banyak platform untuk mempelajari basic python. Dibawah ini merupakan list platform yang bisa digunakan untuk belajar mengenai bahasa pemrograman python.
 1. https://www.w3schools.com/python/default.asp
