@@ -14,7 +14,6 @@ Colab atau "Colaboratory", digunakan untuk menulis dan mengeksekusi Python melal
 Google Colaboratory dapat diakses pada https://colab.research.google.com
 
 ## Bagian Esensial pada Colab
-### 1. Fitur-Fitur Dasar
 
 <p align="center">
     <img src="contents/fitur colab 1.png" width="700" style="vertical-align:middle">
@@ -24,13 +23,15 @@ Google Colaboratory dapat diakses pada https://colab.research.google.com
     <img src="contents/fitur colab 2.png" width="720" style="vertical-align:middle">
 </p>
 
-### 2. Connect Runtime
+## Workflow
+
+### 1. Buat file
 
 <p align="center">
-    <img src="contents/connect runtime.png" width="670" style="vertical-align:middle">
+    <img src="contents/tampilan awal colab.png" width="800" style="vertical-align:middle">
 </p>
 
-### 3. Mengganti Tipe Runtime
+### 2. Pilih jenis runtime
 
 <p align="center">
     <img src="contents/tipe runtime 1.png" width="700" style="vertical-align:middle">
@@ -40,25 +41,27 @@ Google Colaboratory dapat diakses pada https://colab.research.google.com
     <img src="contents/tipe runtime 2.png" width="700" style="vertical-align:middle">
 </p>
 
-### 4. Contoh Output
+    GPU dipilih karena dengan menggunakan GPU proses komputasi akan semakin cepat
 
+### 3. Connect runtime
+    Klik connect/reconnect atau "save" saat memilih jenis runtime
+### 4. Tulis Code
+    Tuliskan code atau text pada cell yang tersedia atau dengan membuat cell baru
+### 5. Eksekusi code
+    Klik tombol run yang berada pada samping kiri setiap cell code
+   
 <p align="center">
     <img src="contents/contoh output.png" width="700" style="vertical-align:middle">
 </p>
 
-### 5. Saving
+    Gambar di atas menampilkan contoh output jika code terdapat error, tidak ada perintah output, dan terdapat perintah output
+
+### 6. Save
+    Colab akan melakukan saving secara otomatis melalui fitur auto-saving pada Google Drive setiap ada perubahan pada code
 
 <p align="center">
     <img src="contents/saving.png" width="800" style="vertical-align:middle">
 </p>
-
-## Workflow
-1. Buat file
-2. Pilih jenis runtime
-3. Connect runtime
-4. Tulis Code
-5. Eksekusi code
-6. Save
 
 ## Additional Resources
 
