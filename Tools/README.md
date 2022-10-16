@@ -50,6 +50,15 @@ Colab atau "Colaboratory", digunakan untuk menulis dan mengeksekusi Python melal
     <img src="contents/saving.png" width="800" style="vertical-align:middle">
 </p>
 
+## Workflow
+1. Buat file
+2. Pilih jenis runtime
+3. Connect runtime
+4. Tulis Code
+5. Eksekusi code
+6. Save
+
+## Additional Resources
 
 Video: [Introduction to Colab](https://www.youtube.com/watch?v=inN8seMm7UI&ab_channel=TensorFlow)
 
