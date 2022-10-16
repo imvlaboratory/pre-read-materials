@@ -12,7 +12,7 @@ Colab atau "Colaboratory", digunakan untuk menulis dan mengeksekusi Python melal
 - Mudah berkolaborasi dengan orang banyak (easy sharing)
 
 ## Bagian Esensial pada Colab
-### 1. Fitur-fitur
+### 1. Fitur-Fitur Dasar
 
 <p align="center">
     <img src="contents/fitur colab 1.png" width="700" style="vertical-align:middle">
