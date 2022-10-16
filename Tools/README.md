@@ -11,6 +11,8 @@ Colab atau "Colaboratory", digunakan untuk menulis dan mengeksekusi Python melal
 - Akses ke GPU secara gratis
 - Mudah berkolaborasi dengan orang banyak (easy sharing)
 
+Google Colaboratory dapat diakses pada https://colab.research.google.com
+
 ## Bagian Esensial pada Colab
 ### 1. Fitur-Fitur Dasar
 
