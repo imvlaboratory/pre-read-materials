@@ -1,6 +1,11 @@
 <h1 align="center"> Tools </h1>
 
 # Google Colaboratory
+
+<p align="center">
+    <img src="contents/logo colab.png" width="360" style="vertical-align:middle">
+</p>
+
 Colab atau "Colaboratory", digunakan untuk menulis dan mengeksekusi Python melalui browser dengan keuntungan sebagai berikut:
 - Tidak perlu konfigurasi
 - Akses ke GPU secara gratis
