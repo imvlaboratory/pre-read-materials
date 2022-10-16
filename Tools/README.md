@@ -11,7 +11,44 @@ Colab atau "Colaboratory", digunakan untuk menulis dan mengeksekusi Python melal
 - Akses ke GPU secara gratis
 - Mudah berkolaborasi dengan orang banyak (easy sharing)
 
+## Bagian Esensial pada Colab
+### 1. Fitur-fitur
 
+<p align="center">
+    <img src="contents/fitur colab 1.png" width="700" style="vertical-align:middle">
+</p>
+
+<p align="center">
+    <img src="contents/fitur colab 2.png" width="720" style="vertical-align:middle">
+</p>
+
+### 2. Connect Runtime
+
+<p align="center">
+    <img src="contents/connect runtime.png" width="670" style="vertical-align:middle">
+</p>
+
+### 3. Mengganti Tipe Runtime
+
+<p align="center">
+    <img src="contents/tipe runtime 1.png" width="700" style="vertical-align:middle">
+</p>
+
+<p align="center">
+    <img src="contents/tipe runtime 2.png" width="700" style="vertical-align:middle">
+</p>
+
+### 4. Contoh Output
+
+<p align="center">
+    <img src="contents/contoh output.png" width="700" style="vertical-align:middle">
+</p>
+
+### 5. Saving
+
+<p align="center">
+    <img src="contents/saving.png" width="800" style="vertical-align:middle">
+</p>
 
 
 Video: [Introduction to Colab](https://www.youtube.com/watch?v=inN8seMm7UI&ab_channel=TensorFlow)
