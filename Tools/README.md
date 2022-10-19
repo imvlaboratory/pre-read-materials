@@ -25,13 +25,14 @@ Google Colaboratory dapat diakses pada https://colab.research.google.com
 
 ## Workflow
 
-### 1. Buat file
+### 1. Buka Google Colab pada: https://colab.research.google.com
+### 2. Buat file
 
 <p align="center">
     <img src="contents/tampilan awal colab.png" width="800" style="vertical-align:middle">
 </p>
 
-### 2. Pilih jenis runtime
+### 3. Pilih jenis runtime
 
 <p align="center">
     <img src="contents/tipe runtime 1.png" width="700" style="vertical-align:middle">
@@ -43,11 +44,11 @@ Google Colaboratory dapat diakses pada https://colab.research.google.com
 
     GPU dipilih karena dengan menggunakan GPU proses komputasi akan semakin cepat
 
-### 3. Connect runtime
+### 4. Connect runtime
     Klik connect/reconnect atau "save" saat memilih jenis runtime
-### 4. Tulis Code
+### 5. Tulis Code
     Tuliskan code atau text pada cell yang tersedia atau dengan membuat cell baru
-### 5. Eksekusi code
+### 6. Eksekusi code
     Klik tombol run yang berada pada samping kiri setiap cell code
    
 <p align="center">
@@ -56,7 +57,7 @@ Google Colaboratory dapat diakses pada https://colab.research.google.com
 
     Gambar di atas menampilkan contoh output jika code terdapat error, tidak ada perintah output, dan terdapat perintah output
 
-### 6. Save
+### 7. Save
     Colab akan melakukan saving secara otomatis melalui fitur auto-saving pada Google Drive setiap ada perubahan pada code
 
 <p align="center">
