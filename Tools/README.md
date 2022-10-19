@@ -80,24 +80,42 @@ Written Tutorial:
 ## Bagian Esensial pada Jupyter Notebook
 
 <p align="center">
-    <img src="contents/fitur colab 1.png" width="700" style="vertical-align:middle">
+    <img src="contents/fitur jupyter.png" style="vertical-align:middle">
 </p>
 
 ## Instalasi
 
-1. Install dengan command `pip` :
-`pip install jupyterlab` pada cmd
+### 1. Install dengan command `pip`
+Gunakan command `pip install jupyterlab` pada cmd
 
-2. Jalankan dengan command:
-`jupyter-lab` pada cmd
+### 2. Jalankan dengan command:
+Gunakan command `jupyter-lab` pada cmd
 
 Tampilan setelah berhasil menjalankan:
 
+<p align="center">
+    <img src="contents/cmd jupyter.png" width="700" style="vertical-align:middle">
+</p>
 
 ## Workflow
-### 1. Jalankan dengan command: `jupyter-lab` pada cmd
-### 2. Akses local host pada: `http://localhost:8888/`
+### 1. Jalankan Jupyter Notebook 
+    Gunakan command `jupyter-lab` pada cmd
+### 2. Akses local host
+    Jupyter Notebook dapat di akses pada `http://localhost:8888/`
 ### 3. Tulis code
+    Tuliskan code atau text pada cell yang tersedia atau dengan membuat cell baru
 ### 4. Eksekusi Code
+    Klik tombol run yang berada pada samping kiri setiap cell code
+<p align="center">
+    <img src="contents/output jupyter.png" width="700" style="vertical-align:middle">
+</p>
+
+    Gambar di atas menampilkan contoh output jika code terdapat error, tidak ada perintah output, dan terdapat perintah output
 ### 5. Save
+    Lakukan saving dengan menekan tombol save
 ### 6. Close CMD
+    Close CMD untuk mematikan akses ke Jupyter Notebook
+
+## Additional Resources
+
+Documentation: [Jupyter Project Documentation](https://docs.jupyter.org/en/latest/)
