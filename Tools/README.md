@@ -76,3 +76,28 @@ Written Tutorial:
 <p align="center">
     <img src="contents/logo jupyter.svg" width="360" style="vertical-align:middle">
 </p>
+
+## Bagian Esensial pada Jupyter Notebook
+
+<p align="center">
+    <img src="contents/fitur colab 1.png" width="700" style="vertical-align:middle">
+</p>
+
+## Instalasi
+
+1. Install dengan command `pip` :
+`pip install jupyterlab` pada cmd
+
+2. Jalankan dengan command:
+`jupyter-lab` pada cmd
+
+Tampilan setelah berhasil menjalankan:
+
+
+## Workflow
+### 1. Jalankan dengan command: `jupyter-lab` pada cmd
+### 2. Akses local host pada: `http://localhost:8888/`
+### 3. Tulis code
+### 4. Eksekusi Code
+### 5. Save
+### 6. Close CMD
