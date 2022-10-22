@@ -77,6 +77,12 @@ Written Tutorial:
     <img src="contents/logo jupyter.svg" width="360" style="vertical-align:middle">
 </p>
 
+Jupyter Notebook merupakan singkatan dari tiga bahasa pemrograman, yakni Julia (Ju), Python (Py), dan R. Jupyter Notebook adalah sebuah aplikasi web gratis yang paling banyak dipakai oleh data scientist. Aplikasi ini dipakai untuk membuat dan membagikan dokumen yang memiliki kode, hasil hitungan, visualisasi, dan teks. Ketiga bahasa pemrograman pada Jupyter Notebook sendiri adalah sesuatu yang penting bagi seorang data scientist.
+
+Sederhananya, Jupyter Notebook berfungsi membantu data scientist dalam membuat narasi komputasi. Narasi komputasi sendiri menjelaskan makna dari data di dalamnya dan memberikan insight (wawasan) tentang data tersebut. 
+
+Kemudahan aspek menulis dan berbagi teks maupun kode dalam aplikasi ini juga membuatnya cocok digunakan untuk kolaborasi. Jupyter Notebook membuat kerja sama antara insinyur dan data scientist lebih mudah dan lancar. Aplikasi ini juga memudahkan data scientist melakukan kolaborasi dengan sesama data scientist, data researchers, maupun data engineers lainnya.
+
 ## Bagian Esensial pada Jupyter Notebook
 
 <p align="center">
