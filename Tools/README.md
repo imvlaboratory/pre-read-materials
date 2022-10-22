@@ -77,11 +77,11 @@ Written Tutorial:
     <img src="contents/logo jupyter.svg" width="360" style="vertical-align:middle">
 </p>
 
-[Jupyter Notebook](https://algorit.ma/blog/cara-menggunakan-jupyter-notebook-2022/) merupakan singkatan dari tiga bahasa pemrograman, yakni Julia (Ju), Python (Py), dan R. Jupyter Notebook adalah sebuah aplikasi web gratis yang paling banyak dipakai oleh data scientist. Aplikasi ini dipakai untuk membuat dan membagikan dokumen yang memiliki kode, hasil hitungan, visualisasi, dan teks. Ketiga bahasa pemrograman pada Jupyter Notebook sendiri adalah sesuatu yang penting bagi seorang data scientist.
+[Jupyter](https://algorit.ma/blog/cara-menggunakan-jupyter-notebook-2022/) merupakan singkatan dari tiga bahasa pemrograman, yakni Julia (Ju), Python (Py), dan R. Jupyter Notebook adalah sebuah aplikasi web gratis yang paling banyak dipakai oleh data scientist. Aplikasi ini dipakai untuk membuat dan membagikan dokumen yang memiliki kode, hasil hitungan, visualisasi, dan teks. Ketiga bahasa pemrograman pada Jupyter Notebook sendiri adalah sesuatu yang penting bagi seorang data scientist.
 
 Sederhananya, Jupyter Notebook berfungsi membantu data scientist dalam membuat narasi komputasi. Narasi komputasi sendiri menjelaskan makna dari data di dalamnya dan memberikan insight (wawasan) tentang data tersebut. 
 
-Kemudahan aspek menulis dan berbagi teks maupun kode dalam aplikasi ini juga membuatnya cocok digunakan untuk kolaborasi. Jupyter Notebook membuat kerja sama antara insinyur dan data scientist lebih mudah dan lancar. Aplikasi ini juga memudahkan data scientist melakukan kolaborasi dengan sesama data scientist, data researchers, maupun data engineers lainnya.
+JupyterLab adalah antarmuka pengguna generasi berikutnya termasuk notebook. Ini memiliki struktur modular, di mana Anda dapat membuka beberapa buku catatan atau file (misalnya HTML, Text, Markdowns, dll) sebagai tab di jendela yang sama. Ini menawarkan lebih banyak pengalaman seperti IDE. JupyterLab menawarkan lebih banyak fitur dan antarmuka yang disempurnakan daripada Jupyter Notebook, yang dapat diperluas melalui ekstensi: [Ekstensi JupyterLab (GitHub)](https://github.com/search?q=topic%3Ajupyterlab-extension&type=Repositories).
 
 ## Bagian Esensial pada Jupyter Notebook
 
@@ -91,11 +91,13 @@ Kemudahan aspek menulis dan berbagi teks maupun kode dalam aplikasi ini juga mem
 
 ## Instalasi
 
-### 1. Install dengan command `pip`
-Gunakan command `pip install jupyterlab` pada cmd
+Instalasi pada `jupyter-lab` dapat dilakukan dengan command pip dan conda untk Anaconda. Untuk Anaconda, Jupyterlab dan Jupyter Notebook sudah termasuk didalamnya. Untuk Instalasi Anaconda dapat dilihat [disini]()
+
+### 1. Install dengan command `pip` atau `conda`
+Gunakan command `pip install jupyterlab` untuk install jupyterlab dan `pip install jupyter` untuk install jupyter notebook pada cmd
 
 ### 2. Jalankan dengan command:
-Gunakan command `jupyter-lab` pada cmd
+Gunakan command `jupyter-lab` pada cmd untuk jupyterlab dan `jupyter-notebook` untuk jupyter notebook
 
 Tampilan setelah berhasil menjalankan:
 
