@@ -1,5 +1,3 @@
-BANNER STUDY GROUP
-----
 <h1 align="center"> Artificial Neural Network (ANN) / Dense Neural Network </h1>
 
 <p align="center">
