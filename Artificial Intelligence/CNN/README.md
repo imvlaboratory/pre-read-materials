@@ -1,5 +1,3 @@
-BANNER STUDY GROUP
-----
 <h1 align="center"> Convolutional Neural Network (CNN) </h1>
 
 <p align="center">
